@@ -1,0 +1,156 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header, footer {
+  background-color: green;
+  color: white;
+  width: 100%;
+}
+
+header h1 {
+  letter-spacing: 5px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0;
+}
+
+footer {
+  padding: 6px 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header a {
+  display: block;
+  color: white;
+}
+
+header nav a {
+  padding: 10px;
+  margin: 0;
+}
+
+header nav a:hover {
+  background-color: white;
+  color: green;
+  cursor: pointer;
+  transition: all .35s ease-in-out;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  box-shadow:
+      0 2px 4px rgba(0, 0, 0, 0.1),
+      0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+header nav div {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+main {
+  min-height: 81vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  margin: 0;
+  background-color: lightgray;
+  padding: 15px 50px;
+  border-radius: 10px;
+  transition: all .35s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.1);
+  background-color: rgb(236, 235, 235)
+}
+
+.container h1, .container p {
+  margin: 0;
+}
+
+input, select {
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.stats-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 6px 12px rgba(0, 0, 0, 0.08);
+  padding: 0 30px;
+  width: 80%;
+}
+
+table {
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 0 20px;
+}
+
+tr {
+  border-bottom: 1px solid gray;
+}
+
+tr:first-of-type {
+  border-bottom: 2px solid black;
+}
+
+tr:last-of-type {
+  border-bottom: none;
+}
+
+input[type='date'] {
+  margin-left: 10px;
+}
+
+select {
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
